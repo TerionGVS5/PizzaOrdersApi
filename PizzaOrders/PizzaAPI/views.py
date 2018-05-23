@@ -1,5 +1,21 @@
-from django.http import HttpResponse
+from rest_framework.generics import (
+    ListCreateAPIView,
+    RetrieveUpdateDestroyAPIView
+)
+from rest_framework.permissions import AllowAny
+from .models import OrderPizza
+from .serializers import OrderPizzaSerializer
 
 
-def index_api(request):
-    return HttpResponse("Hello, this just test page.")
+class OrderPizzaListCreateAPIView(ListCreateAPIView):
+    queryset = OrderPizza.objects.all()
+    permission_classes = (AllowAny,)
+    serializer_class = OrderPizzaSerializer
+    lookup_field = 'uuid'
+
+
+class OrderPizzaRetrieveUpdateDestroyAPIView(RetrieveUpdateDestroyAPIView):
+    queryset = OrderPizza.objects.all()
+    permission_classes = (AllowAny,)
+    serializer_class = OrderPizzaSerializer
+    lookup_field = 'uuid'
