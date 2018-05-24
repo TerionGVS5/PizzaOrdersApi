@@ -51,3 +51,8 @@ It can look likes http://127.0.0.1:8000/api/426bb335-71a3-43b9-ab4d-e4cdfd72d54a
     Here you can see UI that provides Django Rest Framework.
     Here you can update/delete pizza order. Also you can just make put/delete requests to http://127.0.0.1:8000/api/uuid/
     withour using any form.
+
+## Expamples working
+![Pizza Orders list](https://drive.google.com/uc?export=view&id=18ETGqKPca8g30jE0ZBGu2Sqrsx-aUApV)
+
+![Pizza Order update/delete](https://drive.google.com/uc?export=view&id=1-eE4RuMY1EYnp6nZxpUmzlmRyY8I2oIg)
