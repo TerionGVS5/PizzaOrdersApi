@@ -35,3 +35,19 @@ This app uses Django Rest Framework, so users can:
 11. Visit http://127.0.0.1:8000/api/ to check work
 12. You also can run test using this command:
     > pytest
+## How to use
+1. Run app
+    > python manage.py runserver
+2. Go to **http://127.0.0.1:8000/api/** in your browser
+
+    Now you can see UI that provides Django Rest Framework. 
+    Here you can see list of pizza orders and form that helps
+    to create new order. If you want to get just json data - you 
+    need to go **http://127.0.0.1:8000/api/?format=json**
+   
+3. Go to **http://127.0.0.1:8000/api/uuid/**, set uuid for order that you need.
+It can look likes http://127.0.0.1:8000/api/426bb335-71a3-43b9-ab4d-e4cdfd72d54a/
+ 
+    Here you can see UI that provides Django Rest Framework.
+    Here you can update/delete pizza order. Also you can just make put/delete requests to http://127.0.0.1:8000/api/uuid/
+    withour using any form.
