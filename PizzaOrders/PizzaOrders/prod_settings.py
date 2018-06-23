@@ -124,4 +124,4 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = "/webapps/PizzaAPI/PizzaOrders/PizzaOrders/PizzaAPI/static/PizzaAPI"
+STATIC_ROOT = "/webapps/PizzaAPI/PizzaOrders/PizzaOrders/PizzaAPI/static/"
